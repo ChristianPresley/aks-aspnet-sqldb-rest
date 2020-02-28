@@ -15,7 +15,7 @@ app:
   name: claims-api
 
 image:
-  repository: labtest.azurecr.io/claims-api
+  repository: cdpk8slab.azurecr.io/claims-api
   tag: latest
   tag0: latest
   pullPolicy: Always
@@ -29,7 +29,7 @@ checks:
   periodSeconds: 30
 
 ingress:
-  enabled: false
+  enabled: true
   annotations:
     kubernetes.io/ingress.class: traefik
   path: /
