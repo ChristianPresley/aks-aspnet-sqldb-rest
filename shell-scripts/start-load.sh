@@ -2,7 +2,7 @@
 svcIpAddress=51.143.54.103
 dataDir=../test-data
 counter=1
-1=5
+runs=5
 
 echo "***** Starting Functional Test *****"
 
@@ -32,9 +32,9 @@ echo
 echo "Claims resources - INSERT - RETRIEVE - UPDATE - DELETE"
 echo
 echo "***** Executing functional tests with institutional and professional claims *****"
-echo "***** Attempting total no. of test runs = [$1] *****"
+echo "***** Attempting total no. of test runs = [$runs] *****"
 echo
-while [ $counter -le $1 ]
+while [ $counter -le $runs ]
 do
   echo "================================================================"
   echo "************* Executing [run # = $counter] ***************"
